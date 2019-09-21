@@ -4,12 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div id="sketch-holder">
-      <!-- Our sketch will go here! -->
+    <h1>Regression with Tensorflowjs</h1>
+    <p>
+      Choose between Linear and Polynomial Regression and cleack on the canvus
+    </p>
+    <div class="radio-container">
+      <label for=""><input
+        type="radio"
+        name="regressionType"
+        value="Linear"
+        checked
+      />Linear</label>
+     <label ><input
+        type="radio"
+        name="regressionType"
+        value="Polynomial"
+      />Polynomial</label> 
     </div>
+
+    <p>
+      Using Tensorflowjs the line will be moved for the best fit ef the points
+      you have clicked
+    </p>
+    <div id="sketch-holder"></div>
+    <div class="button-container">
+      <button>Undo</button> <button>Clear</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="./sketch.js"></script>

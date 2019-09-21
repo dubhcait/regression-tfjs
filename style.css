@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+#sketch-holder,
+.button-container,
+.radio-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+}
